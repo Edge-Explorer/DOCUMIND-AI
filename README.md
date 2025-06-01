@@ -1,52 +1,55 @@
 # Documind-AI 📄🧠
 
-A local document Q\&A assistant that lets you upload files (PDF, DOCX, TXT) and ask natural language questions about their content — powered by LangChain, FAISS, and Ollama.
+A local document Q\&A assistant that lets you upload files (PDF, DOCX, TXT) and ask natural language questions about their content — powered by LangChain, FAISS, and Ollama. Comes with a mobile-friendly React Native frontend.
 
 ---
 
 ## ⚙️ Features
 
-* Multi-format document support (PDF, DOCX, TXT)
-* LLM-based Q\&A using Ollama (local models like Gemma)
-* OCR support for scanned/image-based documents
-* Embedding and indexing with LangChain + FAISS
-* Fast, context-aware natural language answers
-* Electron-based cross-platform frontend
+* 📄 Supports PDF, DOCX, and TXT files
+* 💬 Ask questions about any uploaded document
+* 🧠 Powered by local LLMs (Ollama + LangChain)
+* 🔍 Uses FAISS for semantic search
+* 🖼️ OCR support via Tesseract for scanned files
+* 📱 Mobile frontend built with React Native
 
 ---
 
 ## 🧠 Tech Stack
 
-* Python (Flask Backend)
-* React + TypeScript (Electron Frontend)
-* LangChain, FAISS
-* Ollama (Local LLMs)
-* Tesseract OCR (for scanned files)
+* **Backend**: Python (Flask), LangChain, FAISS, Tesseract OCR, Ollama (Gemma, Mistral, etc.)
+* **Frontend**: React Native (Expo)
 
 ---
 
 ## 📁 Modules
 
 * `app.py` – Flask backend entry point
-* `generate.py` – Query handling and response generation
-* `ollama_llm.py` – Custom wrapper for Ollama LLM
-* `utils.py` – Utilities for file management
-* `document/` – Uploaded document store
-* `frontend/` – React + Electron frontend
-* `index_store/` – FAISS vector database
+* `generate.py` – Handles document parsing and query response
+* `ollama_llm.py` – LangChain-compatible wrapper for Ollama
+* `utils.py` – File and preprocessing utilities
+* `document/` – Stores uploaded files
+* `index_store/` – Stores FAISS indexes
+* `frontend/` – React Native mobile app source
 
 ---
 
-## 🧪 Dataset / Input
+## 🧪 Input
 
-* User-uploaded documents (PDF, DOCX, TXT)
-* Optional scanned images (OCR support enabled)
+* MNIST-like user interaction: User uploads a document → App processes and indexes it → User can ask questions.
+
+Supported formats:
+
+* 📄 `.pdf`, `.docx`, `.txt`
+* 🖼️ OCR-enabled `.pdf` (scanned)
 
 ---
 
 ## 🚀 Goal
 
-To build a private, fast, and interactive assistant that can understand and respond to user queries based on uploaded documents — without relying on external APIs or cloud-hosted models.
+To build a fast, offline-capable document assistant that runs entirely on your machine, ensuring both privacy and performance without relying on cloud APIs.
+
+
 
 
 
