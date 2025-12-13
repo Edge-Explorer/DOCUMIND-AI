@@ -1,0 +1,29 @@
+flask==3.0.0
+requests==2.31.0
+
+# LangChain ecosystem (old compatible versions)
+langchain==0.0.350
+langchain-community==0.0.6
+
+# Embeddings + vector store
+sentence-transformers==2.2.2
+faiss-cpu==1.7.4
+
+# Document processing
+PyMuPDF==1.23.7
+python-docx==0.8.11
+pdfminer.six==20221105
+
+# Utilities
+python-dotenv==1.0.0
+numpy==1.26.2
+
+# If using HuggingFaceHub inside project (optional but safe)
+huggingface_hub==0.19.4
+
+# Required by langchain + sentence-transformers
+torch==2.2.0
+transformers==4.36.2
+
+# Safety: restrict pydantic version for old langchain
+pydantic==1.10.12
