@@ -25,7 +25,6 @@ A local document Q\&A assistant that lets you upload files (PDF, DOCX, TXT) and 
 ## 📁 Modules
 
 * `app.py` – Flask backend entry point
-* `generate.py` – Handles document parsing and query response
 * `ollama_llm.py` – LangChain-compatible wrapper for Ollama
 * `utils.py` – File and preprocessing utilities
 * `document/` – Stores uploaded files
